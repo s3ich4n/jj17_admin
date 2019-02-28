@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="15.0" layoutY="200.0" pannable="true" prefHeight="630.0" prefWidth="1060.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jj17.yubicycle.view.mainstageController">
+   <content>
+      <GridPane fx:id="gridPane" alignment="CENTER" maxHeight="4000.0" maxWidth="1020.0" prefHeight="4000.0" prefWidth="1000.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+		 <!-- 여기서는 row와 column의 개념이 우리가 흔히아는 행렬과 반대로인 것 같다! 그점에 유의해서 rowIndex, columnIndex를 갖다붙였다! -->
+         <children>
+            <Button fx:id="btn1" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="4" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="5" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="6" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="8" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="9" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn10" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="10" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn11" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="11" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn12" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="12" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn13" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="13" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn14" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="14" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn15" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="15" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn16" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="16" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn17" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="17" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn18" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="18" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn19" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="19" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn20" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="20" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn21" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="21" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn22" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="22" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn23" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="23" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn24" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="24" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn25" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="25" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn26" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="26" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn27" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="27" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn28" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="28" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn29" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="29" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn30" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="30" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn31" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="31" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn32" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="32" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn33" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="33" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn34" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="34" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn35" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="35" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn36" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="36" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn37" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="37" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn38" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="38" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn39" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="39" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn40" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="40" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn41" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="41" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn42" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="42" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn43" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="43" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn44" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="44" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn45" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="45" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn46" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="46" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn47" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="47" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn48" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="48" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn49" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="49" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn50" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn51" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="51" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn52" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="52" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn53" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="53" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn54" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="54" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn55" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="55" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn56" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="56" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn57" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="57" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn58" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="58" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn59" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="59" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn60" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="60" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn61" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="61" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn62" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="62" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn63" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="63" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn64" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="64" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn65" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="65" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn66" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="66" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn67" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="67" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn68" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="68" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn69" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="69" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn70" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="70" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn71" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="71" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn72" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="72" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn73" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="73" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn74" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="74" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn75" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="75" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn76" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="76" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn77" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="77" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn78" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="78" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn79" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="79" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn80" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#showNumberDialog" onMouseEntered="#getCell" text="80" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </content>
+</ScrollPane>
